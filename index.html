@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Mariam Mahmoud | Computer Science Student & AI Automation Developer</title>
+  <meta name="title" content="Mariam Mahmoud | Computer Science Student & AI Automation Developer">
+  <meta name="description" content="Portfolio of Mariam Mahmoud, Computer Science student at Mansoura University specializing in AI Automation, AI Agents, n8n workflows, and RAG systems.">
+  <meta name="keywords" content="Mariam Mahmoud, AI Automation, n8n, AI Agents, RAG Systems, Mansoura University, Computer Science, Workflow Automation">
+  <meta name="author" content="Mariam Mahmoud">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%236366f1'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='46' font-weight='900' fill='white'>M</text></svg>">
+
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet with Cache Buster -->
+  <link rel="stylesheet" href="css/style.css?v=3.2">
+
+  <style>
+    /* Immediate Photo Framing & Containment */
+    .profile-card {
+      max-width: 320px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+    .profile-image-wrapper {
+      aspect-ratio: 9 / 16 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      overflow: hidden !important;
+      width: 100% !important;
+    }
+    .profile-img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: contain !important;
+      object-position: center center !important;
+      display: block !important;
+      transform: none !important;
+    }
+    .profile-placeholder-graphic {
+      display: none !important;
+    }
+    .about-card-image-box {
+      max-width: 260px !important;
+      aspect-ratio: 9 / 16 !important;
+      margin: 0 auto 1.5rem auto !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      overflow: hidden !important;
+      width: 100% !important;
+    }
+    .about-img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: contain !important;
+      object-position: center center !important;
+      display: block !important;
+      transform: none !important;
+    }
+    .about-placeholder-graphic {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Glow & Grid Effect -->
+  <div class="bg-pattern" aria-hidden="true"></div>
+  <div class="glow-orb orb-1" aria-hidden="true"></div>
+  <div class="glow-orb orb-2" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Mariam Mahmoud Homepage">
+        <span class="logo-mark">&lt;MM /&gt;</span>
+        <span class="logo-text">Mariam<span class="text-accent">.dev</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons: Theme Toggle & Contact Button -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-outline btn-nav-cta">
+          <span>Let's Talk</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience & Learning</a></li>
+        <li><a href="#services" class="mobile-nav-link">Services</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="#contact" class="btn btn-primary btn-block">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Status Pill -->
+          <div class="badge hero-badge animate-fade-up">
+            <span class="status-indicator"></span>
+            <span class="badge-text">Open for Freelance Projects & Internships</span>
+          </div>
+
+          <!-- Hero Name & Title -->
+          <h1 class="hero-title animate-fade-up delay-1">
+            Hi, I'm <span class="gradient-text">Mariam Mahmoud</span>
+          </h1>
+
+          <div class="hero-subtitle-wrapper animate-fade-up delay-2">
+            <p class="hero-role">
+              <span class="role-part">Computer Science Student</span>
+              <span class="role-separator">|</span>
+              <span class="role-part text-accent">AI Automation Developer</span>
+            </p>
+            <p class="hero-education-tag">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21.42 10.922a1 1 0 0 0-.019-.838L12.83 2.18a2 2 0 0 0-1.66 0L2.6 10.084a1 1 0 0 0 0 1.832l8.57 7.908a2 2 0 0 0 1.66 0l8.57-7.908a1 1 0 0 0 .02-.994z"></path>
+                <path d="M22 10v6"></path>
+                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+              </svg>
+              Faculty of Computers and Information, Mansoura University
+            </p>
+          </div>
+
+          <!-- Statements -->
+          <p class="hero-intro animate-fade-up delay-3">
+            “Passionate about building smart systems and turning complex, repetitive tasks into automated and efficient workflows.”
+          </p>
+
+          <p class="hero-secondary animate-fade-up delay-3">
+            I am a Computer Science student focused on AI Automation and AI Agents, building practical solutions that connect AI models with real-world tools and workflows.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-actions animate-fade-up delay-4">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Quick Highlight Pills -->
+          <div class="hero-tech-pills animate-fade-up delay-5">
+            <span class="tech-pill"><span class="pill-dot"></span> n8n Workflows</span>
+            <span class="tech-pill"><span class="pill-dot"></span> AI Agents</span>
+            <span class="tech-pill"><span class="pill-dot"></span> RAG Systems</span>
+            <span class="tech-pill"><span class="pill-dot"></span> Python</span>
+          </div>
+        </div>
+
+        <!-- Profile Photo / Interactive Visual Card -->
+        <div class="hero-visual animate-fade-left delay-2">
+          <div class="profile-card">
+            <div class="profile-glow"></div>
+            
+            <div class="profile-image-wrapper">
+              <img 
+                src="assets/profile.jpg" 
+                alt="Mariam Mahmoud - Computer Science Student and AI Automation Developer" 
+                class="profile-img"
+                id="hero-profile-image"
+                onerror="this.style.display='none'; document.getElementById('profile-placeholder-graphic').style.display='flex';"
+              >
+              
+              <!-- Refined Graphic Placeholder (renders seamlessly if profile.jpg is not yet added) -->
+              <div class="profile-placeholder-graphic" id="profile-placeholder-graphic" style="display: none;">
+                <div class="avatar-monogram">
+                  <span class="monogram-text">MM</span>
+                </div>
+                <div class="placeholder-tag">Mariam Mahmoud</div>
+                <div class="placeholder-caption">Profile Photo Placeholder</div>
+                <div class="placeholder-subcaption">assets/profile.jpg</div>
+              </div>
+            </div>
+
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge badge-top-right">
+              <span class="badge-icon">⚡</span>
+              <div class="badge-content">
+                <span class="badge-title">AI Automation</span>
+                <span class="badge-sub">n8n & Agents</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <span class="badge-icon">🎓</span>
+              <div class="badge-content">
+                <span class="badge-title">CS Student</span>
+                <span class="badge-sub">Mansoura Univ.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CAREER OBJECTIVE SECTION ==================== -->
+    <section class="section objective-section" id="objective">
+      <div class="container">
+        <div class="objective-card glass-panel animate-on-scroll">
+          <div class="objective-header">
+            <div class="section-tag">
+              <span class="tag-icon">🎯</span> Career Objective
+            </div>
+            <h2 class="objective-heading">Vision & Technical Trajectory</h2>
+          </div>
+          
+          <div class="objective-body">
+            <blockquote class="objective-quote">
+              <p>
+                “My goal is to grow into a skilled AI Automation and Software Developer who combines strong Computer Science fundamentals with AI, automation, and software engineering to build practical solutions for real-world problems.”
+              </p>
+              <p class="objective-secondary-p">
+                “I am currently focused on AI Automation and AI Agents, while continuously expanding my technical foundation. In the future, I aim to develop deeper expertise in Networking and Cybersecurity and build systems that are intelligent, reliable, and useful.”
+              </p>
+            </blockquote>
+
+            <div class="objective-focus-areas">
+              <div class="focus-chip">
+                <span class="focus-bullet"></span>
+                <span>Current Core: AI Automation & AI Agents</span>
+              </div>
+              <div class="focus-chip">
+                <span class="focus-bullet"></span>
+                <span>Foundation: Computer Science & Software Engineering</span>
+              </div>
+              <div class="focus-chip">
+                <span class="focus-bullet"></span>
+                <span>Future Expansion: Networking & Cybersecurity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ME SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-tag"><span class="tag-icon">👤</span> Background</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Dedicated Computer Science student with an active focus on practical automation systems.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Content -->
+          <div class="about-text-column animate-on-scroll">
+            <div class="about-paragraphs">
+              <p class="lead-text">
+                I am a second-year Computer Science student at the Faculty of Computers and Information, Mansoura University, with a growing focus on AI Automation, AI Agents, and intelligent workflow automation.
+              </p>
+              <p>
+                I chose Computer Science because I enjoy combining logic, programming, and problem-solving to build practical solutions for real-world challenges.
+              </p>
+              <p>
+                Currently, I am developing my skills in AI Automation using n8n and building AI-powered systems that connect language models with external tools, databases, APIs, and services.
+              </p>
+              <p>
+                Through personal projects and technical training, I am gaining hands-on experience in workflow automation, AI Agents, RAG systems, prompt engineering, and software development.
+              </p>
+              <p>
+                My long-term goal is to combine strong programming fundamentals with AI, automation, networking, and cybersecurity to build useful and reliable technology solutions.
+              </p>
+            </div>
+
+            <!-- Quick Fact Cards -->
+            <div class="about-stats-grid">
+              <div class="stat-card">
+                <div class="stat-icon">🎓</div>
+                <div class="stat-number">2nd Year</div>
+                <div class="stat-label">Faculty of Computers & Information, Mansoura Univ.</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon">⚡</div>
+                <div class="stat-number">DEPI</div>
+                <div class="stat-label">AI Automation Trainee (6-Month Program)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon">🧩</div>
+                <div class="stat-number">Hands-On</div>
+                <div class="stat-label">Building Real Workflows, RAG & Tool-Calling Agents</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Column / About Card with Photo Placeholder -->
+          <div class="about-visual-column animate-on-scroll">
+            <div class="about-card glass-panel">
+              <div class="about-card-image-box">
+                <img 
+                  src="assets/profile.jpg" 
+                  alt="Mariam Mahmoud" 
+                  class="about-img"
+                  onerror="this.style.display='none'; document.getElementById('about-placeholder-graphic').style.display='flex';"
+                >
+                <div class="about-placeholder-graphic" id="about-placeholder-graphic" style="display: none;">
+                  <div class="about-avatar-circle">
+                    <span>MM</span>
+                  </div>
+                  <span class="about-placeholder-title">Mariam Mahmoud</span>
+                  <span class="about-placeholder-desc">Photo Placeholder (assets/profile.jpg)</span>
+                </div>
+              </div>
+
+              <div class="about-card-details">
+                <h3 class="about-card-name">Mariam Mahmoud</h3>
+                <p class="about-card-sub">Mansoura, Egypt</p>
+                <div class="about-card-divider"></div>
+                <ul class="about-info-list">
+                  <li>
+                    <span class="info-label">Degree</span>
+                    <span class="info-val">B.Sc. in Computer Science (In Progress)</span>
+                  </li>
+                  <li>
+                    <span class="info-label">University</span>
+                    <span class="info-val">Mansoura University</span>
+                  </li>
+                  <li>
+                    <span class="info-label">Specialization</span>
+                    <span class="info-val text-accent">AI Automation & Agents</span>
+                  </li>
+                  <li>
+                    <span class="info-label">Freelance</span>
+                    <span class="info-val status-val"><span class="dot-green"></span> Available</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-tag"><span class="tag-icon">💻</span> Technical Arsenal</span>
+          <h2 class="section-title">Skills & Capabilities</h2>
+          <p class="section-subtitle">A balanced toolkit pairing strong computer science fundamentals with modern AI automation workflows.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Featured Category: AI & Automation (Visually Prioritized) -->
+          <div class="skill-category-card featured-category animate-on-scroll">
+            <div class="featured-badge">
+              <span>★ Current Main Focus</span>
+            </div>
+            <div class="category-header">
+              <div class="category-icon-box accent-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2v8"></path>
+                  <path d="m4.93 10.93 1.41 1.41"></path>
+                  <path d="M2 18h2"></path>
+                  <path d="M20 18h2"></path>
+                  <path d="m19.07 10.93-1.41 1.41"></path>
+                  <path d="M22 22H2"></path>
+                  <path d="m8 22 4-10 4 10"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">AI & Automation</h3>
+                <p class="category-desc">Designing autonomous agents, RAG pipelines, and multi-service workflows.</p>
+              </div>
+            </div>
+
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip highlight-chip">
+                <div class="chip-icon">⚡</div>
+                <div class="chip-info">
+                  <span class="chip-name">n8n</span>
+                  <span class="chip-detail">Workflow Automation Engine</span>
+                </div>
+              </div>
+
+              <div class="skill-chip highlight-chip">
+                <div class="chip-icon">🤖</div>
+                <div class="chip-info">
+                  <span class="chip-name">AI Agents</span>
+                  <span class="chip-detail">Autonomous Tool Routing</span>
+                </div>
+              </div>
+
+              <div class="skill-chip highlight-chip">
+                <div class="chip-icon">🔄</div>
+                <div class="chip-info">
+                  <span class="chip-name">Workflow Automation</span>
+                  <span class="chip-detail">Multi-Step API Orchestration</span>
+                </div>
+              </div>
+
+              <div class="skill-chip highlight-chip">
+                <div class="chip-icon">📚</div>
+                <div class="chip-info">
+                  <span class="chip-name">RAG Systems</span>
+                  <span class="chip-detail">Embeddings & Knowledge Retrieval</span>
+                </div>
+              </div>
+
+              <div class="skill-chip highlight-chip">
+                <div class="chip-icon">🎯</div>
+                <div class="chip-info">
+                  <span class="chip-name">Prompt Engineering</span>
+                  <span class="chip-detail">Structured System Directives</span>
+                </div>
+              </div>
+
+              <div class="skill-chip highlight-chip">
+                <div class="chip-icon">✨</div>
+                <div class="chip-info">
+                  <span class="chip-name">Google Gemini</span>
+                  <span class="chip-detail">LLM Integration & Reasoning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Programming Languages -->
+          <div class="skill-category-card animate-on-scroll">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Programming Languages</h3>
+                <p class="category-desc">Core languages used across computer science coursework and applications.</p>
+              </div>
+            </div>
+
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <span class="chip-bullet"></span>
+                <span class="chip-name">Python</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-bullet"></span>
+                <span class="chip-name">C#</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-bullet"></span>
+                <span class="chip-name">Java</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-bullet"></span>
+                <span class="chip-name">PHP</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-bullet"></span>
+                <span class="chip-name">HTML</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-bullet"></span>
+                <span class="chip-name">CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Development Tools -->
+          <div class="skill-category-card animate-on-scroll">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Development Tools</h3>
+                <p class="category-desc">Software and workflow tools powering version control and development.</p>
+              </div>
+            </div>
+
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <span class="chip-bullet"></span>
+                <span class="chip-name">GitHub</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-bullet"></span>
+                <span class="chip-name">Visual Studio</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-bullet"></span>
+                <span class="chip-name">Microsoft Office</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-bullet"></span>
+                <span class="chip-name">n8n</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Computer Science Fundamentals -->
+          <div class="skill-category-card animate-on-scroll">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">CS Fundamentals</h3>
+                <p class="category-desc">Theoretical and applied principles from university coursework.</p>
+              </div>
+            </div>
+
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <span class="chip-bullet"></span>
+                <span class="chip-name">Object-Oriented Programming</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-bullet"></span>
+                <span class="chip-name">Data Structures</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-bullet"></span>
+                <span class="chip-name">Databases</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-bullet"></span>
+                <span class="chip-name">Operating Systems</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-bullet"></span>
+                <span class="chip-name">Computer Architecture</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-bullet"></span>
+                <span class="chip-name">Web Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-tag"><span class="tag-icon">🚀</span> Featured Work</span>
+          <h2 class="section-title">Practical Projects</h2>
+          <p class="section-subtitle">Real-world AI automation pipelines, intelligent agents, and software implementations.</p>
+        </div>
+
+        <div class="projects-list">
+          <!-- ================= PROJECT 1: RAG AI Assistant ================= -->
+          <article class="project-card glass-panel animate-on-scroll">
+            <div class="project-badge-wrap">
+              <span class="project-status-badge">AI Automation & RAG</span>
+            </div>
+
+            <div class="project-header">
+              <div class="project-title-group">
+                <h3 class="project-title">RAG AI Assistant</h3>
+                <p class="project-subtitle">AI-Powered Retrieval-Augmented Generation System using n8n</p>
+              </div>
+            </div>
+
+            <!-- Workflow Architecture Diagram / Pipeline Visualizer -->
+            <div class="project-pipeline-container" aria-label="RAG Workflow Architecture Diagram">
+              <div class="pipeline-heading">System Workflow Architecture:</div>
+              <div class="pipeline-flow">
+                <div class="flow-node">
+                  <span class="node-icon">📁</span>
+                  <span class="node-label">Google Drive</span>
+                  <span class="node-sub">Private Docs</span>
+                </div>
+                <div class="flow-arrow">➔</div>
+                <div class="flow-node">
+                  <span class="node-icon">🧬</span>
+                  <span class="node-label">Embeddings</span>
+                  <span class="node-sub">Text Vectors</span>
+                </div>
+                <div class="flow-arrow">➔</div>
+                <div class="flow-node">
+                  <span class="node-icon">🌲</span>
+                  <span class="node-label">Pinecone</span>
+                  <span class="node-sub">Vector Database</span>
+                </div>
+                <div class="flow-arrow">➔</div>
+                <div class="flow-node highlight-node">
+                  <span class="node-icon">⚡</span>
+                  <span class="node-label">n8n Agent</span>
+                  <span class="node-sub">Retrieval & Routing</span>
+                </div>
+                <div class="flow-arrow">➔</div>
+                <div class="flow-node">
+                  <span class="node-icon">💬</span>
+                  <span class="node-label">Telegram Bot</span>
+                  <span class="node-sub">User Interface</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <p class="project-description">
+                An AI-powered RAG system designed to answer questions based on private documents and a dedicated knowledge base instead of relying only on the language model’s general knowledge.
+              </p>
+              <p class="project-description">
+                Documents are received from Google Drive, processed into embeddings, and stored in Pinecone. When a user sends a question through Telegram, the AI Agent searches the knowledge base for relevant information and uses the retrieved context to generate a grounded response.
+              </p>
+              <p class="project-description project-highlight-quote">
+                <strong>Anti-Hallucination Design:</strong> If the required information is not available in the knowledge base, the system can indicate that the information was not found instead of simply guessing.
+              </p>
+            </div>
+
+            <div class="project-section-block">
+              <h4 class="block-title">Key Concepts & Architecture</h4>
+              <div class="key-concepts-chips">
+                <span class="concept-chip">Retrieval-Augmented Generation</span>
+                <span class="concept-chip">Vector Databases</span>
+                <span class="concept-chip">Knowledge Bases</span>
+                <span class="concept-chip">AI Agents</span>
+                <span class="concept-chip">Workflow Automation</span>
+              </div>
+            </div>
+
+            <div class="project-section-block">
+              <h4 class="block-title">Technologies Used</h4>
+              <div class="project-tags">
+                <span class="tech-tag">n8n</span>
+                <span class="tech-tag">Google Drive</span>
+                <span class="tech-tag">Pinecone</span>
+                <span class="tech-tag">Google Gemini</span>
+                <span class="tech-tag">Telegram Bot</span>
+                <span class="tech-tag">Memory</span>
+                <span class="tech-tag">Embeddings</span>
+                <span class="tech-tag">RAG</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="#contact" class="btn btn-outline btn-sm">
+                <span>Discuss This Workflow</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <span class="project-meta-pill">n8n Workflow Project</span>
+            </div>
+          </article>
+
+          <!-- ================= PROJECT 2: AI Personal Assistant ================= -->
+          <article class="project-card glass-panel animate-on-scroll">
+            <div class="project-badge-wrap">
+              <span class="project-status-badge">AI Agent & Tool Integration</span>
+            </div>
+
+            <div class="project-header">
+              <div class="project-title-group">
+                <h3 class="project-title">AI Personal Assistant</h3>
+                <p class="project-subtitle">AI Agent for Email, Calendar & Web Automation</p>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <p class="project-description">
+                An AI-powered personal assistant built to simplify everyday digital tasks through a single intelligent agent. The system understands the user’s request, determines which tool is required, and executes the appropriate action through an automated n8n workflow.
+              </p>
+            </div>
+
+            <!-- Features Checklist -->
+            <div class="project-section-block">
+              <h4 class="block-title">Core Features & Capabilities</h4>
+              <ul class="feature-checklist">
+                <li>
+                  <span class="check-icon">✓</span>
+                  <span>Read and summarize important emails</span>
+                </li>
+                <li>
+                  <span class="check-icon">✓</span>
+                  <span>Send emails</span>
+                </li>
+                <li>
+                  <span class="check-icon">✓</span>
+                  <span>Check upcoming Google Calendar events</span>
+                </li>
+                <li>
+                  <span class="check-icon">✓</span>
+                  <span>Create new calendar events</span>
+                </li>
+                <li>
+                  <span class="check-icon">✓</span>
+                  <span>Perform web searches</span>
+                </li>
+                <li>
+                  <span class="check-icon">✓</span>
+                  <span>Maintain conversation context using memory</span>
+                </li>
+                <li>
+                  <span class="check-icon">✓</span>
+                  <span>Select the appropriate tool for each task autonomously</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Key Learning Outcomes -->
+            <div class="project-section-block">
+              <h4 class="block-title">Key Learning Outcomes</h4>
+              <div class="key-concepts-chips">
+                <span class="concept-chip">Building AI Agents</span>
+                <span class="concept-chip">Prompt Engineering</span>
+                <span class="concept-chip">External Tool Integration</span>
+                <span class="concept-chip">Workflow Automation</span>
+                <span class="concept-chip">AI-powered tool selection</span>
+                <span class="concept-chip">Memory & conversational context</span>
+                <span class="concept-chip">Multi-service automation</span>
+              </div>
+            </div>
+
+            <div class="project-section-block">
+              <h4 class="block-title">Technologies Used</h4>
+              <div class="project-tags">
+                <span class="tech-tag">Google Gemini</span>
+                <span class="tech-tag">n8n</span>
+                <span class="tech-tag">Gmail</span>
+                <span class="tech-tag">Google Calendar</span>
+                <span class="tech-tag">SerpAPI / Google Search</span>
+                <span class="tech-tag">Simple Memory</span>
+                <span class="tech-tag">ngrok</span>
+                <span class="tech-tag">Prompt Engineering</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="#contact" class="btn btn-outline btn-sm">
+                <span>Inquire About Agent Design</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <span class="project-meta-pill">Autonomous Tool-Calling Agent</span>
+            </div>
+          </article>
+
+          <!-- ================= PROJECT 3: Access Map ================= -->
+          <article class="project-card glass-panel animate-on-scroll">
+            <div class="project-badge-wrap">
+              <span class="project-status-badge">Software Development</span>
+            </div>
+
+            <div class="project-header">
+              <div class="project-title-group">
+                <h3 class="project-title">Access Map</h3>
+                <p class="project-subtitle">Accessibility & Location-Based Information Project</p>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <p class="project-description">
+                Access Map is a software project focused on making location and accessibility information easier to discover and organize through a digital interface.
+              </p>
+              <p class="project-description">
+                The project was developed around the idea of helping users find relevant places and access useful location-based information through a simple and user-friendly experience.
+              </p>
+            </div>
+
+            <div class="project-section-block">
+              <h4 class="block-title">Key Engineering Highlights</h4>
+              <div class="highlights-grid">
+                <div class="highlight-item">
+                  <div class="highlight-bullet"></div>
+                  <div class="highlight-label">Problem Solving</div>
+                </div>
+                <div class="highlight-item">
+                  <div class="highlight-bullet"></div>
+                  <div class="highlight-label">Software Development</div>
+                </div>
+                <div class="highlight-item">
+                  <div class="highlight-bullet"></div>
+                  <div class="highlight-label">User Interface</div>
+                </div>
+                <div class="highlight-item">
+                  <div class="highlight-bullet"></div>
+                  <div class="highlight-label">Information Organization</div>
+                </div>
+                <div class="highlight-item">
+                  <div class="highlight-bullet"></div>
+                  <div class="highlight-label">Database Concepts</div>
+                </div>
+                <div class="highlight-item">
+                  <div class="highlight-bullet"></div>
+                  <div class="highlight-label">Accessibility-focused thinking</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="#contact" class="btn btn-outline btn-sm">
+                <span>Contact For Details</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <span class="project-meta-pill">Accessibility Software</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE & LEARNING SECTION ==================== -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-tag"><span class="tag-icon">🌱</span> Milestones</span>
+          <h2 class="section-title">Experience & Learning</h2>
+          <p class="section-subtitle">Academic education, specialized technical training, and hands-on project exploration.</p>
+        </div>
+
+        <div class="timeline-container animate-on-scroll">
+          <!-- Timeline Item 1: DEPI Training -->
+          <div class="timeline-card active-timeline">
+            <div class="timeline-marker">
+              <span class="marker-pulse"></span>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge badge-active">Currently in Progress</span>
+                  <h3 class="timeline-title">AI Automation Training</h3>
+                  <div class="timeline-org">Digital Egypt Pioneers Initiative (DEPI)</div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="meta-duration">6 Months</span>
+                  <span class="meta-program">AI Automation with n8n</span>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                Currently developing practical skills in AI Automation, AI Agents, workflow design, integrations, and intelligent automation using n8n.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag-sm">n8n</span>
+                <span class="tag-sm">AI Agents</span>
+                <span class="tag-sm">Workflow Design</span>
+                <span class="tag-sm">Integrations</span>
+                <span class="tag-sm">Intelligent Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Independent Project Development -->
+          <div class="timeline-card">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge">Ongoing</span>
+                  <h3 class="timeline-title">Independent Project Development</h3>
+                  <div class="timeline-org">Personal Projects</div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="meta-duration">Continuous</span>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                Building practical AI and software projects to strengthen programming, automation, problem-solving, and system integration skills.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag-sm">Practical AI Systems</span>
+                <span class="tag-sm">RAG Pipelines</span>
+                <span class="tag-sm">Problem Solving</span>
+                <span class="tag-sm">System Integration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Computer Science Education -->
+          <div class="timeline-card">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge">Second Year</span>
+                  <h3 class="timeline-title">Computer Science Education</h3>
+                  <div class="timeline-org">Faculty of Computers and Information – Mansoura University</div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="meta-duration">Undergraduate Degree</span>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                Developing a strong foundation in programming, data structures, databases, operating systems, computer architecture, web development, and software engineering concepts.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag-sm">Programming Fundamentals</span>
+                <span class="tag-sm">Data Structures</span>
+                <span class="tag-sm">Databases</span>
+                <span class="tag-sm">Operating Systems</span>
+                <span class="tag-sm">Computer Architecture</span>
+                <span class="tag-sm">Web Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dedicated Training Highlight Callout -->
+        <div class="training-highlight-card glass-panel animate-on-scroll">
+          <div class="training-icon-side">
+            <div class="training-logo-badge">DEPI</div>
+          </div>
+          <div class="training-content-side">
+            <div class="training-tag">Specialized Technical Training</div>
+            <h3 class="training-title">Digital Egypt Pioneers Initiative (DEPI)</h3>
+            <div class="training-meta-row">
+              <span class="training-program"><strong>Program:</strong> AI Automation with n8n</span>
+              <span class="training-separator">•</span>
+              <span class="training-duration"><strong>Duration:</strong> 6 Months</span>
+              <span class="training-separator">•</span>
+              <span class="training-status"><strong>Status:</strong> Currently in Progress</span>
+            </div>
+            <p class="training-text">
+              A six-month technical training program focused on AI Automation using n8n, including workflow automation, AI Agents, integrations, and practical AI-powered systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-tag"><span class="tag-icon">💼</span> What I Offer</span>
+          <h2 class="section-title">Services</h2>
+          <p class="section-subtitle">Practical, honest, and high-impact automation and web solutions ready for freelance projects.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card glass-panel animate-on-scroll">
+            <div class="service-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="service-title">AI Workflow Automation</h3>
+            <p class="service-description">
+              Building automated workflows using n8n to connect AI models, APIs, databases, and external services.
+            </p>
+            <ul class="service-points">
+              <li>n8n workflow architecture</li>
+              <li>Multi-service API orchestration</li>
+              <li>Webhook & event-based automation</li>
+            </ul>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card glass-panel animate-on-scroll">
+            <div class="service-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 8V4H8"></path>
+                <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+                <path d="M2 14h2"></path>
+                <path d="M20 14h2"></path>
+                <path d="M15 13v2"></path>
+                <path d="M9 13v2"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">AI Agents & Chatbots</h3>
+            <p class="service-description">
+              Building AI-powered agents and chatbot workflows for practical tasks, including Telegram-based assistants and tool-enabled AI systems.
+            </p>
+            <ul class="service-points">
+              <li>Autonomous tool selection & routing</li>
+              <li>Telegram & messaging bot automation</li>
+              <li>Conversational memory & context management</li>
+            </ul>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card glass-panel animate-on-scroll">
+            <div class="service-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">RAG & Knowledge-Based AI</h3>
+            <p class="service-description">
+              Building RAG workflows that allow AI systems to retrieve relevant information from private documents and knowledge bases.
+            </p>
+            <ul class="service-points">
+              <li>Document ingestion & vector embeddings</li>
+              <li>Pinecone / vector database indexing</li>
+              <li>Grounded responses with anti-hallucination guardrails</li>
+            </ul>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card glass-panel animate-on-scroll">
+            <div class="service-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                <path d="M3 9h18"></path>
+                <path d="M9 21V9"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Website Development</h3>
+            <p class="service-description">
+              Building responsive websites and landing pages using HTML, CSS, and JavaScript.
+            </p>
+            <ul class="service-points">
+              <li>Clean semantic HTML5 & modern CSS3</li>
+              <li>100% responsive cross-device layouts</li>
+              <li>Accessible, lightweight, and fast performance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FREELANCE AVAILABILITY BANNER ==================== -->
+    <section class="section freelance-section" id="freelance">
+      <div class="container">
+        <div class="freelance-banner glass-panel animate-on-scroll">
+          <div class="freelance-content">
+            <div class="freelance-badge">
+              <span class="status-indicator"></span>
+              <span>Available for Hire</span>
+            </div>
+            <h2 class="freelance-title">Available for Freelance Projects</h2>
+            <p class="freelance-text">
+              “I am currently open to freelance opportunities where I can apply my skills in AI automation, AI Agents, workflow automation, chatbots, and website development while continuing to gain real-world experience.”
+            </p>
+            
+            <div class="freelance-checklist-wrap">
+              <h4 class="checklist-title">Services Available:</h4>
+              <div class="freelance-chips">
+                <span class="freelance-chip">✓ n8n Workflow Automation</span>
+                <span class="freelance-chip">✓ AI Agent Workflows</span>
+                <span class="freelance-chip">✓ AI Chatbots</span>
+                <span class="freelance-chip">✓ RAG Systems</span>
+                <span class="freelance-chip">✓ API Integrations</span>
+                <span class="freelance-chip">✓ Website Development</span>
+                <span class="freelance-chip">✓ Landing Pages</span>
+              </div>
+            </div>
+
+            <p class="freelance-note">
+              Available for projects through freelance platforms and professional networking.
+            </p>
+
+            <div class="freelance-buttons">
+              <a href="https://nafezly.com/u/marriammahmoud" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <span>Work with me on Nafezly</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/mariam-ma7moudd" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <span>Connect on LinkedIn</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="mailto:mmrr00196@gmail.com" class="btn btn-outline">
+                <span>Email Directly</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-tag"><span class="tag-icon">📬</span> Get in Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-subtitle">Interested in collaborating on an AI automation project, internship, or freelance opportunity?</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info-col animate-on-scroll">
+            <h3 class="contact-info-heading">Let's Connect & Collaborate</h3>
+            <p class="contact-info-lead">
+              Whether you need to automate workflows with n8n, build an AI agent, deploy a RAG system, or develop a clean web landing page, feel free to reach out.
+            </p>
+
+            <div class="contact-methods">
+              <!-- Email Card -->
+              <div class="contact-method-card">
+                <div class="method-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Email</span>
+                  <a href="mailto:mmrr00196@gmail.com" class="method-link">mmrr00196@gmail.com</a>
+                </div>
+                <button class="copy-btn" id="copy-email-btn" title="Copy email address" aria-label="Copy email address">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- LinkedIn Card -->
+              <div class="contact-method-card">
+                <div class="method-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect width="4" height="12" x="2" y="9"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/mariam-ma7moudd" target="_blank" rel="noopener noreferrer" class="method-link">linkedin.com/in/mariam-ma7moudd</a>
+                </div>
+              </div>
+
+              <!-- Nafezly Card -->
+              <div class="contact-method-card">
+                <div class="method-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m10 15 5-3-5-3v6Z"></path>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Nafezly (Freelance Platform)</span>
+                  <a href="https://nafezly.com/u/marriammahmoud" target="_blank" rel="noopener noreferrer" class="method-link">nafezly.com/u/marriammahmoud</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="location-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Mansoura, Egypt · Available Remotely</span>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-col animate-on-scroll">
+            <div class="form-container glass-panel">
+              <h3 class="form-title">Send a Message</h3>
+              <p class="form-subtitle">Have a question or project in mind? Drop a message below.</p>
+
+              <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="name" class="form-label">Your Name <span class="required">*</span></label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+                  <span class="form-error" id="name-error">Please enter your name</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">Your Email <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="e.g. sarah@example.com" required>
+                  <span class="form-error" id="email-error">Please enter a valid email address</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject" class="form-label">Subject <span class="required">*</span></label>
+                  <input type="text" id="subject" name="subject" class="form-input" placeholder="e.g. Project Inquiry: n8n Workflow Automation" required>
+                  <span class="form-error" id="subject-error">Please enter a subject</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">Message <span class="required">*</span></label>
+                  <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Describe your project, timeline, or inquiry..." required></textarea>
+                  <span class="form-error" id="message-error">Please enter your message</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block submit-btn" id="submit-btn">
+                  <span>Send Message</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+
+                <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <span class="logo-mark">&lt;MM /&gt;</span>
+            <span class="logo-text">Mariam<span class="text-accent">.dev</span></span>
+          </a>
+          <p class="footer-bio">
+            Computer Science Student at Mansoura University & Aspiring AI Automation Developer. Building practical AI agents and workflow automation systems.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-links-col">
+            <h4 class="footer-heading">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#experience">Experience & Learning</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h4 class="footer-heading">Connect</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="https://www.linkedin.com/in/mariam-ma7moudd" target="_blank" rel="noopener noreferrer">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://nafezly.com/u/marriammahmoud" target="_blank" rel="noopener noreferrer">
+                  Nafezly (Freelance)
+                </a>
+              </li>
+              <li>
+                <a href="mailto:mmrr00196@gmail.com">
+                  Email
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 Mariam Mahmoud. All rights reserved.
+        </p>
+
+        <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top of page">
+          <span>Back to Top</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container for interactive feedback -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
